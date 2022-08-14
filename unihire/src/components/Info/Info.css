@@ -1,0 +1,151 @@
+.Info {
+    background: #343a40;
+    height: 100vh;
+    padding: 20px;
+}
+
+.pageTitle {
+    color: white;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoTable {
+    background: black;
+    width: 50%;
+    display: flex;
+    padding: 20px;
+}
+
+.key {
+    color: white;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.heads {
+    height: 35px;
+    width: auto;
+    font-weight: bold;
+}
+
+.value {
+    color: white;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.values {
+    height: 35px;
+    width: auto;
+}
+
+.functions {
+    background: black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+}
+
+.editButton {
+    color: white;
+    background-color: green;
+    margin: 70px;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 40px;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.editButton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 10px green;
+}
+
+.deleteButton {
+    color: white;
+    background-color: red;
+    margin: 70px;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 40px;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.deleteButton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 10px red;
+}
+
+/* Tablet Screen */
+@media (max-width: 968px) {
+    .Info {
+        height: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .infoTable {
+        width: 95%;
+    }
+
+    .functions {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        padding: 0;
+        gap: 60px;
+    }
+
+    .editButton {
+        margin-right: 0;
+    }
+    
+    .deleteButton {
+        margin-left: 0;
+    }
+}
+
+/* Mobile Screen */
+@media (max-width: 426px) {
+    .functions {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+
+    .editButton {
+        margin: 40px;
+    }
+    
+    .deleteButton {
+        margin: 40px;
+    }
+}

@@ -1,0 +1,27 @@
+.graph {
+    background-color: black;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph-text {
+    color: white;
+}
+
+/* Tablet Screen */
+@media (max-width: 968px) {
+    .graph {
+        height: 50%;
+        width: 100%;
+    }
+}
+
+/* Mobile Screen */
+@media (max-width: 426px) {
+    .graph {
+        height: 100%;
+        width: 100%;
+    }
+}

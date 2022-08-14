@@ -1,0 +1,21 @@
+.hero {
+    display: flex;
+    height: 87vh;
+    position: relative;
+    gap: 20px;
+    padding: 20px;
+    background-color: #343a40;
+}
+
+/* Tablet Screen */
+@media (max-width: 968px) {
+    .hero {
+        flex-direction: column;
+        height: 92vh;
+    }
+}
+
+/* Mobile Screen */
+@media (max-width: 426px) {
+    
+}
